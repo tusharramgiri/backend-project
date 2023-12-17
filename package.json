@@ -1,0 +1,15 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "A backrnd project with chai aur backend series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "chai-aur-backend-series"
+  ],
+  "author": "Tushar Ramgiri",
+  "license": "ISC"
+}
