@@ -1,5 +1,9 @@
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
+import app from "./app.js";
+
+const PORT = process.env.PORT;
+
 
 dotenv.config({
     path: './env'
@@ -9,7 +13,7 @@ connectDB()
 
 /* IIFE & function Approch
 import { express } from "express";
-const PORT = process.env.PORT;
+
 const app = express();
 
 
@@ -35,3 +39,16 @@ const app = express();
     }
 })()
 */
+
+
+app.get("/", (req, res) => {
+    res.send("")
+  })
+
+
+
+
+app.listen(PORT, () => {
+    console.log(`App is listening on Port: ${PORT}`);
+})
+
